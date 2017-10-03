@@ -84,6 +84,19 @@ public class GenericsOCJP {
               callingGenericMethod6(list3);// IN super of Camera ..Only super class of Camre i.e MAchine is allowed.
               callingGenericMethod6(list4);
               //callingGenericMethod6(list5);
+         System.out.println("----------------VAlid formats for writing Wildcards-------------------");
+               
+                List<?> a=new ArrayList<Machine>();
+              //VAlid format for Upper-Bound.
+              List<? extends Machine> b=new ArrayList<Camera>();
+              //List<? extends Camera> c=new ArrayList<Machine>();
+              List<? extends Machine> d=new ArrayList<Picture>();
+              
+              // VAlid formats for Lower - Bound.
+              List<? super Machine> e=new ArrayList<Machine>();
+             // List<? super Machine> f=new ArrayList<Camera>();
+             List<? super Camera> g=new ArrayList<Machine>();
+             List<? super Camera> h=new ArrayList<Object>();
            
     }
     
